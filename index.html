@@ -50,7 +50,7 @@
 	<!-- Reference: https://www.youtube.com/watch?v=Vi-pH2gQXAw -->
 	
 	<p>
-	  <a href="https://api.data.gov.sg/v1/environment/psi"> Current PSI readings in Singapore </a> 
+	  <a href="https://data.gov.sg/dataset/psi"> Current PSI readings in Singapore </a> 
 	</p>
 	
 	<div class="table" id="app" style="overflow-x:auto;">
@@ -58,7 +58,7 @@
 			  
 		<thead>
 			  <tr v-for="(result, index) in results['items']" :key="index">
-				<td v-text="'Updated as of: '+ result['timestamp']" colspan="7">Updated as of: 2022-02-06T20:00:00+08:00</td>
+				<td v-text="'Updated as of: '+ result['timestamp']" colspan="7">Updated as of: </td>
 			  </tr>
 
 		  <tr>
@@ -108,7 +108,9 @@
 		})
 	</script>
 	
-	<p> Designed by Ong Kian Eng using Axios and Vue </p>
+	<p> Designed by Ong Kian Eng using Axios and Vue <br>
+	<a href="https://github.com/okiane/HASS-assignment1/blob/main/index.html">See original code here</a>
+	</p>
 </body>
 	
 </html>
